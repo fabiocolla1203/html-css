@@ -7,17 +7,25 @@
     <title>Imagem de Fundo</title>
     <style>
         body {
-            height: 100vh;
-            background-color: black;
+            height: 98vh;
+            background-color: black;/*Sempre colocar cor de funfo antes das imagens*/
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover;/*para a imagem tomar a tela inteira sem quebras*/
+            background-attachment: fixed;
+            /*a imagem fica fixa e somente o texto faz a rolagem*/
+            /*Shorthand - Background
+            color > image > position > repeat > {size} > attachment
+            */
+            /*background: black url(imagens/wallpaper003.jpg) center center no-repeat cover fixed ;
+            O Shorthand é tipo uma abreviação para o código de background, o size ainda não funciona em todos os navegadores
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
